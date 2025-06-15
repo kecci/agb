@@ -1,58 +1,39 @@
-import React from 'react';
 import { ShoppingCart, Star } from 'lucide-react';
 
 const products = [
   {
     id: 1,
-    name: 'Fresh Red Snapper',
-    price: 'From $25/kg',
-    image: 'https://images.pexels.com/photos/725992/pexels-photo-725992.jpeg?auto=compress&cs=tinysrgb&w=800',
+    name: 'Fresh Red Snapper (500-650G)',
+    price: '$12.60/kg',
+    image: `${import.meta.env.BASE_URL}/images/red-tilapia-min.jpg`,
     description: 'Premium red snapper caught fresh from Indonesian waters',
     rating: 5,
     category: 'Fish'
   },
   {
     id: 2,
-    name: 'Giant Pacific Octopus',
-    price: 'From $35/kg',
-    image: 'https://images.pexels.com/photos/7125621/pexels-photo-7125621.jpeg?auto=compress&cs=tinysrgb&w=800',
+    name: 'Cuttlefish / Sotong (Medium)',
+    price: '$4.40/kg',
+    image: `${import.meta.env.BASE_URL}/images/fresh-squid-min.jpg`,
     description: 'Fresh octopus with tender meat, perfect for various cuisines',
     rating: 5,
-    category: 'Octopus'
+    category: 'Cuttlefish'
   },
   {
     id: 3,
-    name: 'Yellowfin Tuna',
-    price: 'From $45/kg',
-    image: 'https://images.pexels.com/photos/7125688/pexels-photo-7125688.jpeg?auto=compress&cs=tinysrgb&w=800',
+    name: 'Spanish Mackerel / Tenggiri',
+    price: '$14.40/kg',
+    image: `${import.meta.env.BASE_URL}/images/delicious-white-tuna-recipe-still-life-top-view.jpg`,
     description: 'Sashimi-grade yellowfin tuna, sustainably caught',
     rating: 5,
     category: 'Fish'
   },
   {
     id: 4,
-    name: 'Fresh Barramundi',
-    price: 'From $30/kg',
-    image: 'https://images.pexels.com/photos/8951104/pexels-photo-8951104.jpeg?auto=compress&cs=tinysrgb&w=800',
+    name: 'Fresh Octopus',
+    price: '$28.80/kg',
+    image: `${import.meta.env.BASE_URL}/images/Local-Octopus.jpg`,
     description: 'Premium barramundi with delicate flavor and firm texture',
-    rating: 5,
-    category: 'Fish'
-  },
-  {
-    id: 5,
-    name: 'Blue Swimming Crab',
-    price: 'From $28/kg',
-    image: 'https://images.pexels.com/photos/6763217/pexels-photo-6763217.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Fresh blue swimming crabs from pristine Indonesian coasts',
-    rating: 5,
-    category: 'Crustacean'
-  },
-  {
-    id: 6,
-    name: 'Baby Octopus',
-    price: 'From $22/kg',
-    image: 'https://images.pexels.com/photos/15779515/pexels-photo-15779515.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Tender baby octopus, ideal for Mediterranean dishes',
     rating: 5,
     category: 'Octopus'
   }

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Fish, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -12,7 +11,11 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-3">
-            <Fish className="h-8 w-8 text-blue-600" />
+            <img 
+              src={`${import.meta.env.BASE_URL}agb-logo.png`}
+              alt="Artha Global Bahari Logo" 
+              className="h-10 w-20"
+            />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Artha Global Bahari</h1>
               <p className="text-sm text-gray-600">Premium Indonesian Seafood</p>

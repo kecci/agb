@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight, Star } from 'lucide-react';
 
 export default function Hero() {
@@ -16,7 +15,11 @@ export default function Hero() {
         <div className="max-w-3xl">
           <div className="flex items-center space-x-2 mb-6">
             <Star className="h-5 w-5 text-yellow-400 fill-current" />
-            <span className="text-yellow-400 font-medium">Premium Quality Since 1985</span>
+            <Star className="h-5 w-5 text-yellow-400 fill-current" />
+            <Star className="h-5 w-5 text-yellow-400 fill-current" />
+            <Star className="h-5 w-5 text-yellow-400 fill-current" />
+            <Star className="h-5 w-5 text-yellow-400 fill-current" />
+            <span className="text-yellow-400 font-medium">Top Rated Fresh Fish & Seafood from Indonesia</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -30,13 +33,17 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:transform hover:scale-105">
-              <span>Explore Products</span>
-              <ArrowRight className="h-5 w-5" />
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
-              Contact Us
-            </button>
+            <a href="#products">
+              <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:transform hover:scale-105">
+                <span>Explore Products</span>
+                <ArrowRight className="h-5 w-5" />
+              </button>
+            </a>
+            <a href="#contact">
+              <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+                Contact Us
+              </button>
+            </a>
           </div>
         </div>
       </div>

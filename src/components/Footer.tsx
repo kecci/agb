@@ -1,5 +1,4 @@
-import React from 'react';
-import { Fish, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,7 +7,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <Fish className="h-8 w-8 text-teal-400" />
+              <img 
+                src={`${import.meta.env.BASE_URL}agb-logo.png`}
+                alt="Artha Global Bahari Logo" 
+                className="h-10 w-20"
+              />
               <div>
                 <h3 className="text-2xl font-bold">Artha Global Bahari</h3>
                 <p className="text-gray-400">Premium Indonesian Seafood</p>
@@ -16,20 +19,20 @@ export default function Footer() {
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Leading supplier of premium Indonesian seafood, connecting the pristine waters 
-              of Indonesia's archipelago with customers worldwide since 1985.
+              of Indonesia's archipelago with customers worldwide since 2025.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-teal-400" />
-                <span className="text-gray-300">Jl. Pelabuhan Raya No. 123, Jakarta Utara, Indonesia</span>
+                <span className="text-gray-300">Kendari City, South East Sulawesi (<a href="https://maps.app.goo.gl/ynGfKCeF8PYpSPNG6" className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Google Maps</a>)</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-teal-400" />
-                <span className="text-gray-300">+62 21 1234-5678</span>
+                <span className="text-gray-300">+62 856-1254-058</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-teal-400" />
-                <span className="text-gray-300">info@arthaglobalbahari.com</span>
+                <span className="text-gray-300">arthaglobalbahari@gmail.com</span>
               </div>
             </div>
           </div>
@@ -52,11 +55,11 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-teal-400 mt-0.5" />
                 <div>
-                  <p className="text-gray-300">Monday - Friday</p>
-                  <p className="text-sm text-gray-400">6:00 AM - 8:00 PM</p>
+                  <p className="text-gray-300">Monday - Sunday</p>
+                  <p className="text-sm text-gray-400">6:00 AM - 9:00 PM</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
+              {/* <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-teal-400 mt-0.5" />
                 <div>
                   <p className="text-gray-300">Saturday</p>
@@ -69,7 +72,7 @@ export default function Footer() {
                   <p className="text-gray-300">Sunday</p>
                   <p className="text-sm text-gray-400">8:00 AM - 4:00 PM</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -77,7 +80,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Artha Global Bahari. All rights reserved.
+              © {new Date().getFullYear()} Artha Global Bahari. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Privacy Policy</a>

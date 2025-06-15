@@ -1,57 +1,56 @@
-import React from 'react';
-import { Facebook, Instagram, Twitter, Youtube, Linkedin, MessageCircle } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, MessageCircle, Youtube } from 'lucide-react';
 
 const socialLinks = [
   {
     platform: 'Instagram',
     icon: Instagram,
     username: '@arthaglobalbahari',
-    followers: '45.2K',
+    followers: '5.4K',
     description: 'Daily fresh catches and behind-the-scenes content',
     color: 'bg-gradient-to-r from-purple-500 to-pink-500',
-    url: '#'
+    url: 'https://instagram.com/arthaglobalbahari/'
   },
   {
     platform: 'Facebook',
     icon: Facebook,
     username: 'Artha Global Bahari',
-    followers: '28.5K',
+    followers: '2.5K',
     description: 'Company updates and seafood recipes',
     color: 'bg-blue-600',
-    url: '#'
+    url: 'https://www.facebook.com/profile.php?id=61577333574840'
   },
   {
     platform: 'YouTube',
     icon: Youtube,
     username: 'Artha Global Bahari',
-    followers: '12.8K',
+    followers: '3.8K',
     description: 'Fishing documentaries and cooking tutorials',
     color: 'bg-red-600',
-    url: '#'
+    url: 'https://instagram.com/arthaglobalbahari/'
   },
   {
     platform: 'LinkedIn',
     icon: Linkedin,
     username: 'Artha Global Bahari',
-    followers: '8.3K',
+    followers: '1.3K',
     description: 'Industry insights and business updates',
     color: 'bg-blue-700',
-    url: '#'
+    url: 'https://www.linkedin.com/company/107513466/'
   },
   {
     platform: 'WhatsApp',
     icon: MessageCircle,
-    username: '+62 812-3456-7890',
+    username: '+62 856-1254-058',
     followers: 'Direct Contact',
     description: 'Quick inquiries and customer support',
     color: 'bg-green-500',
-    url: '#'
+    url: 'https://api.whatsapp.com/send?phone=628561254058&text=Hi%20AGB%20Team%2C%20I%27m%20%3Cname%3E%20from%20%3Ccompany%2Fcountry%3E%0A%0AI%20want%20to%20order%20%3Cfrozen%2Ffresh%3E%20products%3A%0A1.%20Octopus%20Grade%20A%3D500kg%0A2.%20Mackerel%20Size%202UP%3D1000kg%0A3.%20...%0A%0ADestination%3A%20%3Ccity%2C%20country%3E'
   }
 ];
 
 export default function SocialMedia() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

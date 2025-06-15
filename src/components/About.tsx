@@ -1,5 +1,4 @@
-import React from 'react';
-import { Award, Truck, Users, Globe } from 'lucide-react';
+import { Award, Globe, Truck, Users } from 'lucide-react';
 
 const features = [
   {
@@ -45,15 +44,15 @@ export default function About() {
             </p>
             <div className="flex items-center space-x-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">38+</div>
+                <div className="text-3xl font-bold text-blue-600">1+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">500+</div>
+                <div className="text-3xl font-bold text-blue-600">20+</div>
                 <div className="text-gray-600">Partner Fishermen</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">25+</div>
+                <div className="text-3xl font-bold text-blue-600">2+</div>
                 <div className="text-gray-600">Countries Served</div>
               </div>
             </div>
@@ -61,7 +60,7 @@ export default function About() {
           
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              src={`${import.meta.env.BASE_URL}/images/pexels-energepic-com-27411-3650159.jpg`}
               alt="Indonesian fishermen"
               className="rounded-xl shadow-2xl"
             />
