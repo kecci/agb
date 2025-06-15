@@ -44,8 +44,8 @@ export default function Footer() {
               <li><a href="#products" className="text-gray-300 hover:text-teal-400 transition-colors">Products</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-teal-400 transition-colors">About Us</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-teal-400 transition-colors">Contact</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-teal-400 transition-colors">Sustainability</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-teal-400 transition-colors">Certifications</a></li>
+              <li><a className="text-gray-300 hover:text-teal-400 transition-colors">Sustainability</a></li>
+              <li><a className="text-gray-300 hover:text-teal-400 transition-colors">Certifications</a></li>
             </ul>
           </div>
 
@@ -83,9 +83,9 @@ export default function Footer() {
               © {new Date().getFullYear()} Artha Global Bahari. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Shipping Policy</a>
+              <a className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Privacy Policy</a>
+              <a className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Terms of Service</a>
+              <a className="text-gray-400 hover:text-teal-400 text-sm transition-colors">Shipping Policy</a>
             </div>
           </div>
         </div>
